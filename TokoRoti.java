@@ -1,4 +1,3 @@
-package uts;
 import java.util.Scanner;
 
 
