@@ -4,7 +4,7 @@ public class TokoRoti {
 
   
     public static void main(String[] args) {
-       Scanner sc = new Scanner(System.in);
+       
        String jenisRoti;
        String jenisLapis;
        String rasaLapis;
@@ -22,7 +22,9 @@ public class TokoRoti {
        System.out.println("Keju");
        System.out.println("================================");
        System.out.print("Tulis disini ");
-       jenisRoti = sc.nextLine();
+       Scanner jenis = new Scanner(System.in);
+       jenisRoti = jenis.nextLine();
+       jenis.close();
        if(jenisRoti.equalsIgnoreCase("coklat")){
            harga = 10000;
        } else if(jenisRoti.equalsIgnoreCase("pandan")){
@@ -43,7 +45,9 @@ public class TokoRoti {
        System.out.println("Keju");
        System.out.println("================================");
        System.out.print("Tulis disini ");
-       jenisRoti = sc.nextLine();
+       Scanner jenis1 = new Scanner(System.in);
+       jenisRoti = jenis1.nextLine();
+       jenis1.close();
        if(jenisRoti.equalsIgnoreCase("coklat")){
            harga1 = 10000;
        } else if(jenisRoti.equalsIgnoreCase("pandan")){
@@ -60,7 +64,9 @@ public class TokoRoti {
         if (harga2>25000){
             System.out.println("Anda mendapatkan toping");
             System.out.println("Pilih jenis roti : Lapis/Tidak");
-            jenisLapis = sc.nextLine();
+            Scanner jenisLapisSc = new Scanner(System.in);
+            jenisLapis = jenisLapisSc.nextLine();
+            jenisLapisSc.close();
             if(jenisLapis.equalsIgnoreCase("lapis")){
                 System.out.println("Pilih mau roti lapis varian apa?");
                 System.out.println("a. Keju + Pandan");
@@ -68,7 +74,9 @@ public class TokoRoti {
                 System.out.println("c. Keju + Coklat");
                 System.out.println("d. Keju + Strawberi");
                 System.out.println("Pilih : a/b/c/d");
-                rasaLapis = sc.nextLine();
+                Scanner lapis = new Scanner(System.in);
+                rasaLapis = lapis.nextLine();
+                lapis.close();
                 if(rasaLapis.equalsIgnoreCase("a")){
                     totalBayar = harga2 + 5000;
                 } else{
